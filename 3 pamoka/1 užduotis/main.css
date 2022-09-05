@@ -13,3 +13,20 @@
 .color5 {
     background-color: rgb(255, 255, 142);
 }
+
+.color6 {
+    background-color: rgb(75, 171, 255);
+}
+
+.color7 {
+    background-color: rgb(255, 156, 229);
+}
+
+.color12 {
+    background-color: rgb(126, 255, 126);
+}
+
+.row > * {
+    border: 1px solid black;
+    text-align: center;
+}
