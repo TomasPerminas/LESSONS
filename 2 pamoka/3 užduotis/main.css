@@ -1,0 +1,47 @@
+body {
+    background-color: #EAEBED;
+}
+
+.image {
+    margin-inline: 60%;
+    margin-top: 17%;
+}
+
+.info {
+    font-family: Arial;
+    text-align: center;
+    margin-inline-end: 60%;
+    margin-top: 15%;
+    font-size: 30px;
+    color: rgb(65, 65, 65);
+}
+
+.text1 {
+    font-family: Arial;
+    text-align: center;
+    margin-inline-end: 60%;
+    color: #656565;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.text2 {
+    font-family: Arial;
+    text-align: center;
+    margin-inline-end: 60%;
+    color: #656565;
+    font-size: 15px;
+    font-weight: italic;
+}
+
+.button {
+    font-family: Arial;
+    text-align: center;
+    margin-inline-end: 60%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}

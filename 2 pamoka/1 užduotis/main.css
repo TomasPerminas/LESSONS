@@ -1,0 +1,153 @@
+body {
+    background-color: grey;
+}
+
+h1 {
+    color: rgb(84, 84, 84);
+}
+
+.container {
+    background-color: rgb(208, 208, 208);
+    padding: 20px;
+    margin-inline: 30%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 80px;
+    width: 40%;
+    color: rgb(177, 177, 177);
+}
+
+.color1 {
+    background-color: rgb(58, 28, 255);
+    padding-left: 40px;
+    margin-inline: 30%;
+    height: 20px;
+    width: 40%;
+    color: aliceblue;
+}
+
+.color2 {
+    background-color: rgb(82, 56, 255);
+    padding-left: 40px;
+    margin-inline: 30%;
+    height: 20px;
+    width: 40%;
+    color: aliceblue;
+}
+
+.color3 {
+    background-color: rgb(97, 72, 255);
+    padding-left: 40px;
+    margin-inline: 30%;
+    height: 20px;
+    width: 40%;
+    color: aliceblue;
+}
+
+.color4 {
+    background-color: rgb(95, 95, 255);
+    padding-left: 40px;
+    margin-inline: 30%;
+    height: 20px;
+    width: 40%;
+    color: aliceblue;
+}
+
+.color5 {
+    background-color: rgb(111, 95, 255);
+    padding-left: 40px;
+    margin-inline: 30%;
+    height: 20px;
+    width: 40%;
+    color: aliceblue;
+}
+
+.color6 {
+    background-color: rgb(123, 108, 255);
+    padding-left: 40px;
+    margin-inline: 30%;
+    height: 20px;
+    width: 40%;
+    color: aliceblue;
+}
+
+.color7 {
+    background-color: rgb(137, 113, 255);
+    padding-left: 40px;
+    margin-inline: 30%;
+    height: 20px;
+    width: 40%;
+    color: aliceblue;
+}
+
+.color8 {
+    background-color: rgb(123, 195, 107);
+    padding-left: 40px;
+    margin-inline: 30%;
+    height: 20px;
+    width: 40%;
+    color: aliceblue;
+}
+
+.color9 {
+    background-color: rgb(255, 120, 178);
+    padding-left: 40px;
+    margin-inline: 30%;
+    height: 20px;
+    width: 40%;
+    color: aliceblue;
+}
+
+.color10 {
+    background-color: rgb(255, 107, 168);
+    padding-left: 40px;
+    margin-inline: 30%;
+    height: 20px;
+    width: 40%;
+    color: aliceblue;
+}
+
+.color11 {
+    background-color: rgb(255, 92, 146);
+    padding-left: 40px;
+    margin-inline: 30%;
+    height: 20px;
+    width: 40%;
+    color: aliceblue;
+}
+
+.color12 {
+    background-color: rgb(255, 76, 145);
+    padding-left: 40px;
+    margin-inline: 30%;
+    height: 20px;
+    width: 40%;
+    color: aliceblue;
+}
+
+.color13 {
+    background-color: rgb(255, 66, 141);
+    padding-left: 40px;
+    margin-inline: 30%;
+    height: 20px;
+    width: 40%;
+    color: aliceblue;
+}
+
+.color14 {
+    background-color: rgb(255, 50, 132);
+    padding-left: 40px;
+    margin-inline: 30%;
+    height: 20px;
+    width: 40%;
+    color: aliceblue;
+}
+
+.color15 {
+    background-color: rgb(255, 32, 125);
+    padding-left: 40px;
+    margin-inline: 30%;
+    height: 20px;
+    width: 40%;
+    color: aliceblue;
+}
