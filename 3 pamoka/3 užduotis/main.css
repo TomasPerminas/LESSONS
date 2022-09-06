@@ -19,13 +19,27 @@ h1 {
 }
 
 .text1 {
+    font-family: Arial, Helvetica, sans-serif;
     color: grey;
     margin-top: 80px;
     padding-left: 25px;
     position: absolute;
 }
 
+input[type="text"]{
+    background-color: rgb(240, 240, 240);
+}
+
+input[type="email"]{
+    background-color: rgb(240, 240, 240);
+}
+
+input[type="password"]{
+    background-color: rgb(240, 240, 240);
+}
+
 form {
+    font-family: Arial, Helvetica, sans-serif;
     padding-left: 25px;
     padding-right: 25px;
     margin-top: 150px;
@@ -33,6 +47,7 @@ form {
 }
 
 footer {
+    font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
     color: grey;
     text-align: center;
