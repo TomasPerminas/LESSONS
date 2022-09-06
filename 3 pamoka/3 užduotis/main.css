@@ -28,25 +28,16 @@ h1 {
 
 input[type="text"]{
     background-color: rgb(240, 240, 240);
-}
-
-input[type="email"]{
-    background-color: rgb(240, 240, 240);
-}
-
-input[type="password"]{
-    background-color: rgb(240, 240, 240);
-}
-
-input[type="text"]{
     border: 0px;
 }
 
 input[type="email"]{
+    background-color: rgb(240, 240, 240);
     border: 0px;
 }
 
 input[type="password"]{
+    background-color: rgb(240, 240, 240);
     border: 0px;
 }
 
