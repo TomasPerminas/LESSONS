@@ -35,3 +35,7 @@ footer {
     color: grey;
     text-align: center;
 }
+
+.col-md-6 {
+    margin-bottom: 22px;
+}
