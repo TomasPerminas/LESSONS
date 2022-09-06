@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(255, 207, 215);
+}
+
+.container {
+    background-color: aliceblue;
+    margin-top: 50px;
+    width: 500px;
+    height: 650px;
+    position: relative;
+}
+
+h1 {
+    padding: 25px;
+    position: absolute;
+}
+
+.text1 {
+    color: grey;
+    margin-top: 80px;
+    padding-left: 25px;
+    position: absolute;
+}
+
+form {
+    padding-left: 25px;
+    margin-top: 150px;
+    position: absolute;
+}
