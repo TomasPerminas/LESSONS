@@ -18,3 +18,16 @@ if (length1 > length2) {
 
 console.log("=========== 2 užduotis ============");
 
+let rndText3 = "Keanu";
+let rndText4 = "Reeves";
+
+let uppercase = rndText3.toUpperCase();
+let lowercase = rndText4.toLowerCase();
+
+console.log(uppercase);
+console.log(lowercase);
+
+//============ 3 užduotis ===========
+
+console.log("============= 3 užduotis ============");
+
