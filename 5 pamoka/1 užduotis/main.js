@@ -1,5 +1,7 @@
 //============ 1 užduotis ============
 
+//Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus (Jonas Jonaitis). Atspausdinti trumpesnį stringą.
+
 console.log("============= 1 užduotis =============");
 
 let rndText1 = "Keanu";
@@ -16,6 +18,8 @@ if (length1 > length2) {
 
 //============ 2 užduotis ============
 
+//Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus. Vardą atspausdinti tik didžiosiom raidėm, o pavardę tik mažosioms. 
+
 console.log("============= 2 užduotis =============");
 
 let rndText3 = "Keanu";
@@ -28,6 +32,8 @@ console.log(uppercase + " " + lowercase);
 
 //=========== 3 užduotis =============
 
+//Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus. Sukurti trečią kintamąjį ir jam priskirti stringą, sudarytą iš pirmų vardo ir pavardės kintamųjų raidžių. Jį atspausdinti.
+
 console.log("============= 3 užduotis =============");
 
 let rndText5 = "Keanu";
@@ -38,6 +44,8 @@ let firstLetter = rndText5.charAt(0) + " " + rndText6.charAt(0);
 console.log(firstLetter);
 
 //=========== 4 užduotis =============
+
+//Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus. Sukurti trečią kintamąjį ir jam priskirti stringą, sudarytą iš trijų paskutinių vardo ir pavardės kintamųjų raidžių. Jį atspausdinti.
 
 console.log("============= 4 užduotis =============");
 
@@ -50,6 +58,8 @@ console.log(lastLetters);
 
 //=========== 5 užduotis =============
 
+//Sukurti kintamąjį su stringu: “An American in Paris”. Jame visas “a” (didžiąsias ir mažąsias) pakeisti žvaigždutėm “*”.  Rezultatą atspausdinti.
+
 console.log("============= 5 užduotis =============");
 
 let american1 = "An American in Paris";
@@ -58,6 +68,8 @@ let replaced = american1.replaceAll("A", "*").replaceAll("a", "*");
 console.log(replaced);
 
 //=========== 6 užduotis =============
+
+//Sukurti kintamąjį su stringu: “An American in Paris”. Jame ištrinti visas balses. Rezultatą atspausdinti. Kodą pakartoti su stringais: “Breakfast at Tiffany's”, “2001: A Space Odyssey” ir “It's a Wonderful Life”.
 
 console.log("============= 6 užduotis =============");
 
@@ -82,6 +94,8 @@ let noVowels4 = wonderful.replace(/[aeiou]/gi, '');
 console.log(noVowels4);
 
 //=========== 7 užduotis =============
+
+//Stringe, kurį generuoja toks kodas: "Star Wars: Episode "+ " ".repeat( Math.ceil(Math.random() * 10))+(Math.ceil (Math.random() * 7)+1) + " - A New Hope"; Surasti ir atspausdinti epizodo numerį.
 
 console.log("============= 7 užduotis =============");
 
