@@ -41,3 +41,47 @@ console.log(firstLetter);
 
 console.log("============= 4 užduotis =============");
 
+let rndText7 = "Keanu";
+let rndText8 = "Reeves";
+
+let lastLetters = rndText7.slice(-3) + " " + rndText8.slice(-3);
+
+console.log(lastLetters);
+
+//=========== 5 užduotis =============
+
+console.log("============= 5 užduotis =============");
+
+let american1 = "An American in Paris";
+let replaced = american1.replaceAll("A", "*").replaceAll("a", "*");
+
+console.log(replaced);
+
+//=========== 6 užduotis =============
+
+console.log("============= 6 užduotis =============");
+
+let american2 = "An American in Paris";
+let noVowels1 = american2.replace(/[aeiou]/gi, '');
+
+console.log(noVowels1);
+
+let breakfast = "Breakfast at Tiffany's";
+let noVowels2 = breakfast.replace(/[aeiou]/gi, '');
+
+console.log(noVowels2);
+
+let oddysey = "2001: A Space Odyssey";
+let noVowels3 = oddysey.replace(/[aeiou]/gi, '');
+
+console.log(noVowels3);
+
+let wonderful = "It's a Wonderful Life";
+let noVowels4 = wonderful.replace(/[aeiou]/gi, '');
+
+console.log(noVowels4);
+
+//=========== 7 užduotis =============
+
+console.log("============= 7 užduotis =============");
+
