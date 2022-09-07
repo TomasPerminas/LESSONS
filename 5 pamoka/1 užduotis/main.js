@@ -33,3 +33,11 @@ console.log("============= 3 užduotis =============");
 let rndText5 = "Keanu";
 let rndText6 = "Reeves";
 
+let firstLetter = rndText5.charAt(0) + " " + rndText6.charAt(0);
+
+console.log(firstLetter);
+
+//=========== 4 užduotis =============
+
+console.log("============= 4 užduotis =============");
+
