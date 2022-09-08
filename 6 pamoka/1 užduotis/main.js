@@ -16,4 +16,5 @@ for (let index = 0; index < 300; index++) {
 
 }
 
-console.log(count);
+
+//console.log(count);
