@@ -100,6 +100,5 @@ console.log(noVowels4);
 console.log("============= 7 užduotis =============");
 
 let starWars = "Star Wars: Episode "+ " ".repeat( Math.ceil(Math.random() * 10))+(Math.ceil (Math.random() * 7)+1) + " - A New Hope";
-let episode = starWars.search(Math.ceil(Math.random() * 10))+(Math.ceil (Math.random() * 7)+1);
 
-console.log(episode);
+console.log(starWars.substring(starWars.length - 14,starWars.length - 13));
