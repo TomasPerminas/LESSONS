@@ -1,4 +1,9 @@
+//============ 1 užduotis ============
+
+console.log("============= 1 užduotis =============");
+
 let count = 0;
+let space = " ";
 
 for (let index = 0; index < 300; index++) {
     let rndNum = Math.round(Math.random() * 300);
@@ -8,13 +13,16 @@ for (let index = 0; index < 300; index++) {
     }
 
     if (rndNum > 275) {
-        console.log(" [ " + rndNum + " ] ");
+        space += " [ " + rndNum + " ] ";
     }
     else {
-        console.log(rndNum);
+        space += rndNum + " ";
     }
 
 }
 
+console.log(space);
 
-//console.log(count);
+//============ 2 užduotis ============
+
+console.log("============= 2 užduotis =============");
