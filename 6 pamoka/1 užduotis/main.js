@@ -3,7 +3,7 @@
 console.log("============= 1 užduotis =============");
 
 let count = 0;
-let space = " ";
+let oneLine = "";
 
 for (let index = 0; index < 300; index++) {
     let rndNum = Math.round(Math.random() * 300);
@@ -13,15 +13,15 @@ for (let index = 0; index < 300; index++) {
     }
 
     if (rndNum > 275) {
-        space += " [ " + rndNum + " ] ";
+        oneLine += " [ " + rndNum + " ] ";
     }
     else {
-        space += rndNum + " ";
+        oneLine += rndNum + " ";
     }
 
 }
 
-console.log(space);
+console.log(oneLine);
 
 //============ 2 užduotis ============
 
