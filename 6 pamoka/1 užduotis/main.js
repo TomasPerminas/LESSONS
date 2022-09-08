@@ -43,3 +43,11 @@ console.log(oneLine1.slice(0, -1));
 
 console.log("============= 3 užduotis =============");
 
+let oneLine3 = "";
+
+for (let i = 0; i <= 100; i++) {
+    oneLine3 += "*";
+
+}
+
+console.log(oneLine3);
