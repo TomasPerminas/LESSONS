@@ -54,16 +54,25 @@ for (let i = 10; i <= 50; i += 2) {
 console.log("============= 7 užduotis =============");
 
 for (let i = 10; i <= 50; i += 2) {
-    if (i % 10 == 0) { continue; 
+    if (i % 10 == 0) {
+        continue;
     }
-    else {console.log(i);}
+    else { console.log(i); }
 }
 
 //============ 8 užduotis ============
 
 console.log("============= 8 užduotis =============");
 
+let evenNmb = 0
 
+for (let i = 0; i < 20; i++) {
+    if (i % 2 === 0) {
+        evenNmb++;
+    }
+}
+
+console.log(evenNmb);
 
 //============= SUNKESNI =============
 
