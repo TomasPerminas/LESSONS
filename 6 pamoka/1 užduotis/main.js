@@ -45,9 +45,23 @@ console.log("============= 3 užduotis =============");
 
 let oneLine3 = "";
 
-for (let i = 0; i <= 100; i++) {
-    oneLine3 += "*";
+for (let a = 0; a < 100; a++) {
+    let oneLine3 = "";
+
+    for (let i = 0; i <= 100; i++) {
+        oneLine3 += "*";
+
+    }
+
+    console.log(oneLine3);
 
 }
 
-console.log(oneLine3);
+//============ 4 užduotis ============
+
+console.log("============= 4 užduotis =============");
+
+//============ 5 užduotis ============
+
+console.log("============= 5 užduotis =============");
+
