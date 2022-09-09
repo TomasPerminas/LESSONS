@@ -37,6 +37,32 @@ for (let i = 0; i < plants.length; i++) {
 
 console.log("============= 5 užduotis =============");
 
+for (let i = plants.length - 1; i >= 0; i--) {
+    console.log(plants[i]);
+}
+
+//============ 6 užduotis ============
+
+console.log("============= 6 užduotis =============");
+
+for (let i = 10; i <= 50; i += 2) {
+    console.log(i);
+}
+
+//============ 7 užduotis ============
+
+console.log("============= 7 užduotis =============");
+
+for (let i = 10; i <= 50; i += 2) {
+    if (i % 10 == 0) { continue; 
+    }
+    else {console.log(i);}
+}
+
+//============ 8 užduotis ============
+
+console.log("============= 8 užduotis =============");
+
 
 
 //============= SUNKESNI =============
