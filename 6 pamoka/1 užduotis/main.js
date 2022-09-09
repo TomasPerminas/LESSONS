@@ -1,3 +1,48 @@
+//============= LENGVESNI ============
+
+console.log("============== LENGVESNI =============");
+
+//============ 1 užduotis ============
+
+console.log("============= 1 užduotis =============");
+
+for (let i = 0; i < 10; i++) {
+    console.log("Labas");
+}
+
+//============ 2 užduotis ============
+
+console.log("============= 2 užduotis =============");
+
+for (let i = 0; i < 10; i++) {
+    console.log(i);
+}
+
+//============ 3 užduotis ============
+
+console.log("============= 3 užduotis =============");
+
+let plants = ["plant1", "plant2", "plant3", "plant4", "plant5", "plant6", "plant7", "plant8", "plant9", "plant10"];
+console.log(plants);
+
+//============ 4 užduotis ============
+
+console.log("============= 4 užduotis =============");
+
+for (let i = 0; i < plants.length; i++) {
+    console.log(plants[i]);
+}
+
+//============ 5 užduotis ============
+
+console.log("============= 5 užduotis =============");
+
+
+
+//============= SUNKESNI =============
+
+console.log("============== SUNKESNI ==============");
+
 //============ 1 užduotis ============
 
 console.log("============= 1 užduotis =============");
