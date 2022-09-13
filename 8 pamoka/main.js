@@ -57,6 +57,45 @@ function names(firstName, lastName) {
 
 console.log("============= 5 užduotis =============");
 
+let numerofantastico = numberPlace(69);
+
+function numberPlace(numerofantastico) {
+    document.getElementById("numberPlace").innerText = "numberPlace yra:" + " " + numerofantastico;
+
+}
+
+//============ 6 užduotis ============
+
+console.log("============= 6 užduotis =============");
+
+function rndPrezikai(prezikai) {
+
+    return prezikai[Math.floor(Math.random() * prezikai.length)];
+
+}
+
+let prezikai = ["Gitarius Nausėda", "Johny Sins", "Andrius Tapinas", "Vitalija Katunskytė", "Lukašenka"];
+console.log(rndPrezikai(prezikai));
+
+//============ 7 užduotis ============
+
+console.log("============= 7 užduotis =============");
+
+generateRandomNumbers(0, 5, 3)
+
+function generateRandomNumbers(min, max, times) {
+    let randoms = [];
+    for (let i = 0; i < times; i++) {
+        randoms.push(Math.floor(Math.random() * (max - min) + min))
+    }
+    console.log(randoms);
+
+}
+
+//============ 8 užduotis ============
+
+console.log("============= 8 užduotis =============");
+
 
 
 //============= VIDUTINIAI ============
