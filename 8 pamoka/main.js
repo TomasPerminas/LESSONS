@@ -74,7 +74,7 @@ function rndPrezikai(prezikai) {
 
 }
 
-let prezikai = ["Gitarius Nausėda", "Johny Sins", "Andrius Tapinas", "Vitalija Katunskytė", "Lukašenka"];
+let prezikai = ["Gitarius Nausėda", "Vacys Maslionka", "Johny Sins", "Andrius Tapinas", "Vitalija Katunskytė", "Lukašenka"];
 console.log(rndPrezikai(prezikai));
 
 //============ 7 užduotis ============
@@ -96,6 +96,16 @@ function generateRandomNumbers(min, max, times) {
 
 console.log("============= 8 užduotis =============");
 
+generateRandomNumbers2(25, 100)
+
+function generateRandomNumbers2(min, max) {
+    let randoms2 = [];
+    for (let i = 0; i < 1; i++) {
+        randoms2.push(Math.floor(Math.random() * (max - min) + min))
+    }
+    console.log(randoms2);
+
+}
 
 
 //============= VIDUTINIAI ============
