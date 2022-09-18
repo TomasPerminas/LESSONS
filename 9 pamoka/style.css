@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(44,48,52);
+}
+
+.container {
+    padding-top: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+thead {
+    color: rgb(153, 153, 153);
+}
+
+audio {
+    position: absolute;
+    margin-inline: 80%;
+    margin-top: 10px;
+    padding: 10px;
+}
