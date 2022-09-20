@@ -10,14 +10,40 @@
 
 <body>
 
+
+    <!-- ========== 1 užduotis ========== -->
+
     <?php
-    for ($i = 0; $i < 10; $i++) {
-        echo "<h1>Test</h1>";
+
+    $firstName = "Keanu";
+    $lastName = "Reeves";
+
+    if (strlen($firstName) < strlen($lastName)) {
+        echo "<h3>$firstName</h3>";
+    } else {
+        echo "<h3>$lastName</h3>";
     }
 
-    
+    ?>
+
+    <!-- ========== 2 užduotis ========== -->
+
+    <?php
+
+    echo (strtoupper($firstName) . " " . strtolower($lastName));
 
     ?>
+
+    <!-- ========== 3 užduotis ========== -->
+
+
+    <?php
+
+    $thirdString = (substr($firstName, 0, 1) . substr($lastName, 0, 1));
+    echo "<h3>$thirdString</h3>";
+
+    ?>
+
 
 </body>
 
