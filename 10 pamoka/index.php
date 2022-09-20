@@ -44,6 +44,17 @@
 
     ?>
 
+    <!-- ========== 4 užduotis ========== -->
+
+
+    <?php
+
+
+    $fourthString = (substr($firstName, -3) . substr($lastName, -3));
+    echo "<h3>$fourthString</h3>";
+
+    ?>
+
 
 </body>
 
