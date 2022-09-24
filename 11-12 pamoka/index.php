@@ -1,10 +1,16 @@
-<?php include "./header.php" ?>
+<?php
 
+$color = 'black';
+if (isset($_GET['color'])) {
+    $color = 'red';
+};
 
-<a href="./index.php">Change to black</a>
-<a href="./red.php">Change to red</a>
+?>
 
-<body style="background-color: black">;
+<body style="background-color:<?= $color ?>">
+
+    <a href="./index.php">BLACK</a>
+    <a href="./index.php?color=1">RED</a>
 
 </body>
 
