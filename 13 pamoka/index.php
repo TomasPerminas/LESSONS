@@ -1,20 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+session_start();
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+if (!isset($_SESSION['person'])) {
+    $_SESSION['person'] = [];
+}
 
-    <title>13 pamoka</title>
-</head>
+$_SESSION['person'][] =
+    [
+        'name' => $_GET['firstName'],
+        'surname' => $_GET['lastName']
+    ];
 
-<body>
+?>
 
+<!-- This is my header -->
+<?php include './header.php' ?>;
 
+<form action="" method="get">
+    Name <input type="text" name="firstName"><br>
+    Surname <input type="text" name="lastName"><br>
 
+    <button type="submit">Send</button>
+</form>
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Surname</th>
+    </tr>
+
+    <?php
+    foreach ($_SESSION['person'] as $human) {
+        echo "<tr>";
+        foreach ($human as $entry) {
+            echo "<td>" . $entry . "</td>";
+        }
+        echo "</tr>";
+    }
+
+    ?>
+</table>
 
 </body>
 
