@@ -16,7 +16,7 @@
         header('Location: ./index.php');
     die;
     }
-    
+
 ?>
 
 <!-- This is my header -->
@@ -31,25 +31,8 @@
     <button type="submit">Send</button>
 </form>
 
-<table class="table">
-    <tr>
-        <th>Type</th>
-        <th>Brand</th>
-        <th>Location</th>
-        <th>Price EUR</th>
-    </tr>
-
-    <?php
-    foreach ($_SESSION['whiskey'] as $alcohol) {
-        echo "<tr>";
-        foreach ($alcohol as $entry) {
-            echo "<td>" . $entry . "</td>";
-        }
-        echo "</tr>";
-    }
-
-    ?>
-</table>
+<!-- This is my table -->
+<?php include './table.php' ?>;
 
 </body>
 
