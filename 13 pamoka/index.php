@@ -1,18 +1,22 @@
 <?php
-session_start();
+    session_start();
 
-if (!isset($_SESSION['whiskey'])) {
-    $_SESSION['whiskey'] = [];
-}
+    if (!isset($_SESSION['whiskey'])) {
+        $_SESSION['whiskey'] = [];
+        }
 
-$_SESSION['whiskey'][] =
-    [
-        'type' => $_GET['whiskeyType'],
-        'brand' => $_GET['whiskeyBrand'],
-        'location' => $_GET['whiskeyLocation'],
-        'price' => $_GET['whiskeyPrice'],
-    ];
-
+    if (isset($_GET['whiskeyBrand'])) {
+        $_SESSION['whiskey'][] =
+        [
+          'type' => $_GET['whiskeyType'],
+          'brand' => $_GET['whiskeyBrand'],
+          'location' => $_GET['whiskeyLocation'],
+          'price' => $_GET['whiskeyPrice'],
+        ];
+        header('Location: ./index.php');
+    die;
+    }
+    
 ?>
 
 <!-- This is my header -->
