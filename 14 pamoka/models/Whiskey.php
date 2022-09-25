@@ -9,7 +9,8 @@ class Whiskey {
     public $price;
 
 
-    function __construct($type = null, $brand = null, $location = null, $price = null) {
+    function __construct($id = null, $type = null, $brand = null, $location = null, $price = null) {
+        $this->id = $id;
         $this->type = $type;
         $this->brand = $brand;
         $this->location = $location;
@@ -24,8 +25,11 @@ class Whiskey {
         $result = $db->conn->query($sql);
        
         while ($row = $result->fetch_assoc()) {
-            # code...
+            $whiskey[] = new Whiskey ($row['id'], $row['type'], $row['brand'], $row['location'], $row['price']);
         }
+
+        $db->conn->close();
+        return $whiskey;
     }
 }
 
