@@ -1,6 +1,15 @@
 <?php
 include "./controllers/WhiskeyController.php";
 
+if($_SERVER['REQUEST_METHOD'] == "POST"){
+
+if(isset($_POST['save'])){
+    WhiskeyController::store();
+    header("Location: ./index.php");
+    die;
+    }
+}
+$whiskey = WhiskeyController::index();
 
 ?>
 
@@ -17,10 +26,14 @@ include "./controllers/WhiskeyController.php";
 </head>
 
 <body>
-    <?php
-    $whiskey = WhiskeyController::index();
 
-    ?>
+    <form action="" method="post">
+        <input type="text" name="type" placeholder="Type of whiskey"><br>
+        <input type="text" name="brand" placeholder="Brand name"><br>
+        <input type="text" name="location" placeholder="Location of origin"><br>
+        <input type="text" name="price" placeholder="Price per bottle"><br>
+    <button type="submit" name="save" class="btn btn-primary">SAVE</button>
+    </form>
 
     <table class="table">
         <tr>

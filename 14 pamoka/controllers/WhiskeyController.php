@@ -15,7 +15,7 @@ class WhiskeyController{
 
      public static function store()
     {
-        
+        Whiskey::create();
     }
 
     public static function edit()

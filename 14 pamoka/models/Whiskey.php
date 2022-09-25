@@ -1,4 +1,7 @@
 <?php
+
+use function PHPSTORM_META\type;
+
 include "./models/Database.php";
 
 class Whiskey {
@@ -30,6 +33,16 @@ class Whiskey {
 
         $db->conn->close();
         return $whiskey;
+    }
+
+    public static function create()
+    {
+        $db = new Database();
+        $stmt = $db->conn->prepare("INSERT INTO `whiskey`(`type`, `brand`, `location`, `price`) VALUES (?, ?, ?, ?)");
+        $stmt->bind_param("sssi", $_POST['type'], $_POST['brand'], $_POST['location'], $_POST['price']);
+        $stmt->execute();
+        $stmt->close();
+        $db->conn->close();
     }
 }
 
