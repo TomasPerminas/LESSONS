@@ -1,14 +1,16 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['person'])) {
-    $_SESSION['person'] = [];
+if (!isset($_SESSION['whiskey'])) {
+    $_SESSION['whiskey'] = [];
 }
 
-$_SESSION['person'][] =
+$_SESSION['whiskey'][] =
     [
-        'name' => $_GET['firstName'],
-        'surname' => $_GET['lastName']
+        'type' => $_GET['whiskeyType'],
+        'brand' => $_GET['whiskeyBrand'],
+        'location' => $_GET['whiskeyLocation'],
+        'price' => $_GET['whiskeyPrice'],
     ];
 
 ?>
@@ -17,22 +19,26 @@ $_SESSION['person'][] =
 <?php include './header.php' ?>;
 
 <form action="" method="get">
-    Name <input type="text" name="firstName"><br>
-    Surname <input type="text" name="lastName"><br>
+    Type <input type="text" name="whiskeyType"><br>
+    Brand <input type="text" name="whiskeyBrand"><br>
+    Location <input type="text" name="whiskeyLocation"><br>
+    Price <input type="text" name="whiskeyPrice"><br>
 
     <button type="submit">Send</button>
 </form>
 
 <table class="table">
     <tr>
-        <th>Name</th>
-        <th>Surname</th>
+        <th>Type</th>
+        <th>Brand</th>
+        <th>Location</th>
+        <th>Price EUR</th>
     </tr>
 
     <?php
-    foreach ($_SESSION['person'] as $human) {
+    foreach ($_SESSION['whiskey'] as $alcohol) {
         echo "<tr>";
-        foreach ($human as $entry) {
+        foreach ($alcohol as $entry) {
             echo "<td>" . $entry . "</td>";
         }
         echo "</tr>";
