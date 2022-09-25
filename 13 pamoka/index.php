@@ -20,7 +20,7 @@
 ?>
 
 <!-- This is my header -->
-<?php include './header.php' ?>;
+<?php include './header.php' ?>
 
 <form action="" method="get">
     Type <input type="text" name="whiskeyType"><br>
