@@ -1,38 +1,55 @@
 <?php
 include "./controllers/WhiskeyController.php";
+$edit = false;
 
-if($_SERVER['REQUEST_METHOD'] == "POST"){
+    if($_SERVER['REQUEST_METHOD'] == "POST"){
 
-if(isset($_POST['save'])){
+    if(isset($_POST['save'])){
     WhiskeyController::store();
     header("Location: ./index.php");
     die;
     }
+
+    if(isset($_POST['edit'])){
+    $whiskey = WhiskeyController::show();
+    $edit = true;
+    }
+
+    if(isset($_POST['update'])){
+        $whiskey = WhiskeyController::update();
+        header("Location: ./index.php");
+        die;
+    }
+
+    if(isset($_POST['destroy'])){
+        $whiskey = WhiskeyController::destroy();
+        header("Location: ./index.php");
+        die;
+    }
+
 }
-$whiskey = WhiskeyController::index();
+$whiskies = WhiskeyController::index();
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <title>14 pamoka</title>
-</head>
-
-<body>
+<!-- This is my header -->
+<?php include "./header.php" ?>
 
     <form action="" method="post">
-        <input type="text" name="type" placeholder="Type of whiskey"><br>
-        <input type="text" name="brand" placeholder="Brand name"><br>
-        <input type="text" name="location" placeholder="Location of origin"><br>
-        <input type="text" name="price" placeholder="Price per bottle"><br>
-    <button type="submit" name="save" class="btn btn-primary">SAVE</button>
+        <input type="text" name="type" value="<?= $edit ? $whiskey->type : "" ?>" placeholder="Type of whiskey"><br>
+        <input type="text" name="brand" value="<?= $edit ? $whiskey->brand : "" ?>" placeholder="Brand name"><br>
+        <input type="text" name="location" value="<?= $edit ? $whiskey->location : "" ?>" placeholder="Location of origin"><br>
+        <input type="text" name="price" value="<?= $edit ? $whiskey->price : "" ?>" placeholder="Price per bottle"><br>
+        <input type="hidden" name="id" value="<?= $edit ? $whiskey->id : "" ?>">
+
+<?php
+    if ($edit) { ?>
+        <button type="submit" name="update" class="btn btn-success">UPDATE</button>
+
+<?php } else { ?>
+        <button type="submit" name="save" class="btn btn-primary">SAVE</button>
+
+<?php } ?>
     </form>
 
     <table class="table">
@@ -45,19 +62,21 @@ $whiskey = WhiskeyController::index();
             <th>Edit</th>
             <th>Delete</th>
         </tr>
-        <?php foreach ($whiskey as $whiskey) { ?>
+        <?php foreach ($whiskies as $whiskey) { ?>
 
         <tr>
         <?php foreach ($whiskey as $attribute) { ?>
             <td> <?= $attribute ?> </td>
         <?php } ?>
             <td>
-            <form action="" method="get">
-                <button type="submit" class="btn btn-primary">EDIT</button>
+            <form action="" method="post">
+                <input type="hidden" name="id" value="<?=$whiskey->id?>">
+                <button type="submit" name= "edit" class="btn btn-primary">EDIT</button>
             </form>
             </td> 
             <td>
-            <form action="" method="get">
+            <form action="" method="post">
+                <input type="hidden" name="destroy" value="<?=$whiskey->id?>">
                 <button type="submit" class="btn btn-danger">DELETE</button>
             </form>
             </td>
