@@ -35,21 +35,40 @@ $whiskies = WhiskeyController::index();
 <!-- This is my header -->
 <?php include "./header.php" ?>
 
+<div class="container">
     <form action="" method="post">
-        <input type="text" name="type" value="<?= $edit ? $whiskey->type : "" ?>" placeholder="Type of whiskey"><br>
-        <input type="text" name="brand" value="<?= $edit ? $whiskey->brand : "" ?>" placeholder="Brand name"><br>
-        <input type="text" name="location" value="<?= $edit ? $whiskey->location : "" ?>" placeholder="Location of origin"><br>
-        <input type="text" name="price" value="<?= $edit ? $whiskey->price : "" ?>" placeholder="Price per bottle"><br>
-        <input type="hidden" name="id" value="<?= $edit ? $whiskey->id : "" ?>">
+        <div class="row">
+            <div class="col-md-1">
+                <input class="form-control" type="hidden" name="id" value="<?= $edit ? $whiskey->id : "" ?>">
+            </div>
+            <div class="col-md-2">
+                <input class="form-control" type="text" name="type" value="<?= $edit ? $whiskey->type : "" ?>" placeholder="Type of whiskey">
+            </div>
+            <div class="col-md-2">
+                <input class="form-control" type="text" name="brand" value="<?= $edit ? $whiskey->brand : "" ?>" placeholder="Brand name">
+            </div>
+            <div class="col-md-3">
+                <input class="form-control" type="text" name="location" value="<?= $edit ? $whiskey->location : "" ?>" placeholder="Location of origin">
+            </div>
+            <div class="col-md-1">
+                <input class="form-control" type="text" name="price" value="<?= $edit ? $whiskey->price : "" ?>" placeholder="Price">
+            </div>
 
+            <div class="col-md-3">
 <?php
     if ($edit) { ?>
         <button type="submit" name="update" class="btn btn-success">UPDATE</button>
 
 <?php } else { ?>
-        <button type="submit" name="save" class="btn btn-primary">SAVE</button>
+        <button type="submit" name="save" class="btn btn-dark">SAVE</button>
 
-<?php } ?>
+<?php } ?>    
+            </div>
+        </div>
+</div>
+
+
+<div class="container">
     </form>
 
     <table class="table">
@@ -58,7 +77,7 @@ $whiskies = WhiskeyController::index();
             <th>Type</th>
             <th>Brand</th>
             <th>Location</th>
-            <th>Price</th>
+            <th>Price EUR</th>
             <th>Edit</th>
             <th>Delete</th>
         </tr>
@@ -71,13 +90,13 @@ $whiskies = WhiskeyController::index();
             <td>
             <form action="" method="post">
                 <input type="hidden" name="id" value="<?=$whiskey->id?>">
-                <button type="submit" name= "edit" class="btn btn-primary">EDIT</button>
+                <button type="submit" name= "edit" class="btn btn-outline-secondary">EDIT</button>
             </form>
             </td> 
             <td>
             <form action="" method="post">
                 <input type="hidden" name="id" value="<?=$whiskey->id?>">
-                <button type="submit" name= "destroy" class="btn btn-danger">DELETE</button>
+                <button type="submit" name= "destroy" class="btn btn-outline-danger">DELETE</button>
             </form>
             </td>
         </tr>
@@ -85,7 +104,7 @@ $whiskies = WhiskeyController::index();
         <?php } ?>
 
     </table>
-
+</div>
 
 </body>
 
