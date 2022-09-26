@@ -1,7 +1,4 @@
 <?php
-
-use function PHPSTORM_META\type;
-
 include "./models/Database.php";
 
 class Whiskey {
