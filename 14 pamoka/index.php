@@ -76,8 +76,8 @@ $whiskies = WhiskeyController::index();
             </td> 
             <td>
             <form action="" method="post">
-                <input type="hidden" name="destroy" value="<?=$whiskey->id?>">
-                <button type="submit" class="btn btn-danger">DELETE</button>
+                <input type="hidden" name="id" value="<?=$whiskey->id?>">
+                <button type="submit" name= "destroy" class="btn btn-danger">DELETE</button>
             </form>
             </td>
         </tr>
