@@ -176,3 +176,21 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function merchandises_create_merchandises_merchandises(){
+   
+    //portfolio = merchandises
+    register_post_type('merchandises', array(
+        'labels' => array(
+            'name' => __('Merchandises'),
+            'singular_name' => __('Merchandise')
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'merchandises'),
+        'show_in_rest' => true,
+    ));
+
+}
+
+
+add_action('init', 'merchandises_create_merchandises_merchandises' );
