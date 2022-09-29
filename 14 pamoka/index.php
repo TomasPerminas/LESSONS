@@ -5,14 +5,14 @@ $edit = false;
     if($_SERVER['REQUEST_METHOD'] == "POST"){
 
     if(isset($_POST['save'])){
-    WhiskeyController::store();
-    header("Location: ./index.php");
-    die;
+        WhiskeyController::store();
+        header("Location: ./index.php");
+        die;
     }
 
     if(isset($_POST['edit'])){
-    $whiskey = WhiskeyController::show();
-    $edit = true;
+        $whiskey = WhiskeyController::show();
+        $edit = true;
     }
 
     if(isset($_POST['update'])){
