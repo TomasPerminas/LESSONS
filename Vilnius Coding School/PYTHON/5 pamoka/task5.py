@@ -1,0 +1,1 @@
+# Paprašykite vartotojo įvesti 5-is savo pažymius. Paskaičiuokite pažymių vidurkį. Išveskite atsakymą.
